@@ -2,7 +2,7 @@
   "name": "HHU Sanity Login",
   "manifest_version": 3,
   "version": "0.1",
-  "description": "Auto logins on the Ilias and LSF HHU websites",
+  "description": "Auto login for the HHU Ilias and LSF websites",
   "host_permissions": [
     "https://ilias.hhu.de/",
     "https://lsf.hhu.de/"

@@ -5,7 +5,7 @@ Browser extensions for the HHU websites to put me at ease.
 
 ## Extensions
 
-Functionality split between the following two extensions for now:
+Functionality split between the following extensions for now:
 
 ### HHU-Sanity-Login
 
@@ -28,3 +28,4 @@ Functionality split between the following two extensions for now:
 - [x] Somewhat proper manifest v3 version of the PDF extension
 - [x] Add autologin for the LSF
     - [x] Check if the lsf redirects nicely like ilias
+- [ ] Add more HHU subdomains
