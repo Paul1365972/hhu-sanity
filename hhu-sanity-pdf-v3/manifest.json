@@ -1,0 +1,17 @@
+{
+  "name": "HHU Sanity PDF v3",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Opens PDF files in browser instead of downloading them on HHU websites (WIP)",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://*.hhu.de/"
+  ],
+  "background": {
+    "service_worker": "pdfsanitizer.v3.js"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "HHU Sanity PDF",
   "manifest_version": 2,
   "version": "0.1",
-  "description": "Fixes common annoyances on HHU websites",
+  "description": "Opens PDF files in browser instead of downloading them on HHU websites",
   "permissions": [
     "webRequest", 
     "webRequestBlocking",

@@ -1,0 +1,18 @@
+[{
+  "id": 1,
+  "priority": 1,
+  "action": {
+    "type": "modifyHeaders",
+    "requestHeaders": [
+      {
+        "operation": "set",
+        "header": "content-disposition",
+        "value": "inline"
+      }
+    ]
+  },
+  "condition": {
+    "urlFilter": "||*.hhu.de",
+    "resourceTypes": ["main_frame"]
+  }
+}]

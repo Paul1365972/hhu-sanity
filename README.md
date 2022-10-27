@@ -2,6 +2,7 @@
 
 Browser extensions for the HHU websites to put me at ease.
 
+
 ## Extensions
 
 Functionality split between the following two extensions for now:
@@ -17,8 +18,13 @@ Functionality split between the following two extensions for now:
 - Opens (hopefully) all PDFs on HHU pages in the browser so your downloads folder doesn't fill with hundreds of badly named files
 - Currenly uses manifest v2 (Scheduled to be removed on chrome in 2023), could work with v3, but that would remove the filename in case you do choose to download a PDF
 
+### HHU-Sanity-PDF-v3
+
+- Same as above, but worse. Manifest v3 sucks.
+
+
 ## TODO
 
-- [ ] Proper manifest v3 version of the PDF extension
+- [x] Somewhat proper manifest v3 version of the PDF extension
 - [x] Add autologin for the LSF
     - [x] Check if the lsf redirects nicely like ilias
