@@ -6,9 +6,9 @@ Browser extensions for the HHU websites to put me at ease.
 
 Functionality split between the following two extensions for now:
 
-### HHU-Sanity-Ilias
+### HHU-Sanity-Login
 
-- Auto redirects to ilias login page
+- Auto redirects to Ilias/LSF login page
 - Auto logins when username/password fields are autofilled
     - You will need to click anywhere on the page to login (Because of browser security shenanigans)
 
@@ -18,6 +18,7 @@ Functionality split between the following two extensions for now:
 - Currenly uses manifest v2 (Scheduled to be removed on chrome in 2023), could work with v3, but that would remove the filename in case you do choose to download a PDF
 
 ## TODO
-- Proper manifest v3 version of the PDF extension
-- Add autologin for the LSF
-    - Check if the lsf redirects nicely like ilias
+
+- [ ] Proper manifest v3 version of the PDF extension
+- [x] Add autologin for the LSF
+    - [x] Check if the lsf redirects nicely like ilias
