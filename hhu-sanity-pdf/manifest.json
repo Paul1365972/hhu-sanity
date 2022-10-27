@@ -1,0 +1,15 @@
+{
+  "name": "HHU Sanity PDF",
+  "manifest_version": 2,
+  "version": "0.1",
+  "description": "Fixes common annoyances on HHU websites",
+  "permissions": [
+    "webRequest", 
+    "webRequestBlocking",
+    "https://*.hhu.de/"
+  ],
+  "background": {
+    "scripts": ["pdfsanitizer.js"],
+    "persistent": true
+  }
+}

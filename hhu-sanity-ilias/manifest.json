@@ -1,0 +1,19 @@
+{
+  "name": "HHU Sanity Ilias",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Auto logins on the Ilias HHU website",
+  "host_permissions": [
+    "https://ilias.hhu.de/"
+  ],
+  "content_scripts": [{
+    "matches": ["https://ilias.hhu.de/login.php**"],
+    "css": ["autofill.css"],
+    "js": ["loginilias.js"],
+    "run_at": "document_end"
+  }, {
+    "matches": ["https://ilias.hhu.de/ilias.php**", "https://ilias.hhu.de/error.php**"],
+    "js": ["loginiliasredirect.js"],
+    "run_at": "document_end"
+  }]
+}

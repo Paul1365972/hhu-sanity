@@ -1,0 +1,16 @@
+{
+  "name": "HHU Sanity",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Fixes common annoyances on HHU websites",
+  "permissions": [
+    "webRequest", 
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "https://*.hhu.de/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
