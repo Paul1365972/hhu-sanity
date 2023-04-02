@@ -1,0 +1,15 @@
+{
+  "name": "HHU Sanity Prettier LSF",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Fixes visibility issues for the HHU LSF website",
+  "host_permissions": [
+    "https://lsf.hhu.de/"
+  ],
+  "content_scripts": [{
+    "matches": ["https://lsf.hhu.de/qisserver/rds**"],
+    "css": ["limitsize.css"],
+    "js": ["fixtext.js"],
+    "run_at": "document_end"
+  }]
+}
