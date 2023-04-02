@@ -1,5 +1,5 @@
 (function () {
-  const elements = document.querySelectorAll('tr > td.klein > a.ver');
+  const elements = document.querySelectorAll('tbody:nth-child(1) > tr > td.klein > a.ver');
   
   elements.forEach(e => {
     const title = e.getAttribute('title');

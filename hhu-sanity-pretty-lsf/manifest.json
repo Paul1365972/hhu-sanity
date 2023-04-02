@@ -8,8 +8,8 @@
   ],
   "content_scripts": [{
     "matches": ["https://lsf.hhu.de/qisserver/rds**"],
-    "css": ["limitsize.css"],
-    "js": ["fixtext.js"],
+    "css": ["limitsize.css", "coloronline.css"],
+    "js": ["fixtext.js", "markonline.js"],
     "run_at": "document_end"
   }]
 }
