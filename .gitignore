@@ -1,2 +1,5 @@
 *.crx
 *.pem
+*.db
+*.db-wal
+*.log
