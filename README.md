@@ -22,6 +22,9 @@ Functionality split between the following extensions for now:
 
 - Same as above, but worse. Manifest v3 sucks.
 
+### HHU-Sanity-Pretty-LSF
+
+- Adds a green highligh to all cources in the timetable that are online (Course note contains 'online')
 
 ## TODO
 
