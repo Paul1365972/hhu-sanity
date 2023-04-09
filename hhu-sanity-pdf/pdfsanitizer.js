@@ -1,5 +1,3 @@
-
-// Fix chrome downloading pdf instead of viewing files in browser
 chrome.webRequest.onHeadersReceived.addListener(
   function(details) {
     let content_type = details.responseHeaders.find(e => e.name.toLowerCase() === 'content-type');
@@ -14,10 +12,8 @@ chrome.webRequest.onHeadersReceived.addListener(
 
     return { responseHeaders: details.responseHeaders };
   },
-  // filters
   {
     urls: ["https://*.hhu.de/*"],
   },
-  // extraInfoSpec
   ["blocking","responseHeaders"]
 );

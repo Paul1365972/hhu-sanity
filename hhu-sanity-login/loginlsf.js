@@ -6,12 +6,23 @@
     if (!nameInput || !passwdInput || !submitButton) {
         let loginbtn = document.querySelector("a[href*='lsf.hhu.de/qisserver/rds?state=wlogin&login=in']");
         if (loginbtn) {
+            let url = new URL(loginbtn.href);
+            url.searchParams.set("topitem", "functions");
             console.log("[LSF Autologin] Redirecting to login page");
-            loginbtn.click();
+            window.location.replace(url);
+            //loginbtn.click();
         } else {
             console.log("[LSF Autologin] Could not find login fields");
         }
         return;
+    } else {
+        const btns = Array.from(document.querySelectorAll('#makronavigation > ul > li > a'));
+        const schedulebtn = btns.find(a => a.textContent.includes('Stundenplan'));
+        if (schedulebtn) {
+            console.log("[LSF Autologin] Found login fields, but also schedule button");
+            schedulebtn.click();
+            return;
+        }
     }
 
     let autofilled = true;

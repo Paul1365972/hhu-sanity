@@ -10,8 +10,5 @@
   ],
   "host_permissions": [
     "https://*.hhu.de/"
-  ],
-  "background": {
-    "service_worker": "pdfsanitizer.v3.js"
-  }
+  ]
 }
